@@ -1,11 +1,11 @@
 import { v2 as cloudinary } from "cloudinary";
 import songModels from "../models/songModels.js";
 import fs from 'fs';
-<<<<<<< HEAD
-import { songQueue } from "../queue/songQueue.js";
-=======
 
->>>>>>> 794794b3ffad6c8251a67e4d6ee2a1e0fcfea3ab
+import { songQueue } from "../queue/songQueue.js";
+
+
+
 export const addSong = async (req, res) => {
     try {
         const { name, des, artist, album } = req.body;

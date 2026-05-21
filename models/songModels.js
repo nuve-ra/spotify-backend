@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const songSchema = new mongoose.Schema({
     title: {
-        type: String, // Must be a string
+        type: String, 
         required: true // Field is mandatory
     },
     artist: {
-        type: String, // Must be a string
+        type: String, 
         default: "Unknown Artist" // Default value if not provided
     },
     album: {
@@ -22,11 +22,11 @@ const songSchema = new mongoose.Schema({
         required: true // Field is mandatory
     },
     file: {
-        type: String, // Must be a string (URL for the audio file)
+        type: String, // Must be a string 
         required: true // Field is mandatory
     },
     duration: {
-        type: String, // Must be a string (e.g., "3:45")
+        type: String, 
         required: true // Field is mandatory
     },
 }, {

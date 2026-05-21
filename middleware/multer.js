@@ -3,7 +3,7 @@ import multer from "multer";
 const storage = multer.diskStorage({
     destination: function (req, file, callback) {
         // Set the directory where files will be saved
-        callback(null, './uploads'); // Replace './uploads' with your desired directory
+        callback(null, './uploads');
     },
     filename: function (req, file, callback) {
         // Set the file name with the original name and a timestamp to avoid overwriting
